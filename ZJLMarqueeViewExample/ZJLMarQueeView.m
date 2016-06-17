@@ -65,8 +65,8 @@ static const CGFloat PAGE_CONTROL_HEIGHT = 30.0f;
     
     _pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, _imageHeight-PAGE_CONTROL_HEIGHT, _imageWidth, PAGE_CONTROL_HEIGHT)];
     _pageControl.currentPage = 0;
-    _pageControl.numberOfPages = _images.count;
-    _pageControl.hidden = NO;
+    _pageControl.numberOfPages = _imageURLs.count;
+    _pageControl.pageIndicatorTintColor = [UIColor grayColor];
     [self addSubview:_pageControl];
     
     [_scrollView setContentSize:CGSizeMake(3*_imageWidth, _imageHeight)];
